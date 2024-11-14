@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #2a9d8f;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav .layar-dalam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav .logo h1 {
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+nav .menu-btn {
+    display: none;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+nav .menu li {
+    display: inline-block;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .menu a:hover {
+    text-decoration: underline;
+}
+
+.layar-penuh {
+    position: relative;
+}
+
+header {
+    position: relative;
+    background-color: #fff;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+header video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+header .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+header .intro h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header .intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+header .tombol {
+    padding: 10px 20px;
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+header .tombol:hover {
+    background-color: #f4a261;
+}
+
+#aboutus {
+    background-color: #fff;
+    padding: 60px 20px;
+    color: #333;
+}
+
+#aboutus .layar-dalam {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#aboutus h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+}
+
+#aboutus .ringkasan {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+    font-style: italic;
+}
+
+#aboutus .konten-isi {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+#aboutus .konten-isi p {
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section .ringkasan {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-item strong {
+    font-size: 16px;
+    color: #e76f51;
+}
+
+.product-item .tombol {
+    background-color: #e76f51;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .tombol:hover {
+    background-color: #f4a261;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.konten-isi {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.support {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.support div {
+    width: 30%;
+}
+
+.support img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.dukungan {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.dukungan .layar-dalam {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dukungan .layar-dalam div {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dukungan .layar-dalam div img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.dukungan .layar-dalam div h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dukungan .layar-dalam div p {
+    font-size: 14px;
+    color: #555;
+}
+
+#reviews {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    color: #333;
+}
+
+#reviews .layar-dalam {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reviews h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+}
+
+#reviews form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#reviews form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+#reviews form input, 
+#reviews form select, 
+#reviews form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#reviews form textarea {
+    resize: vertical;
+}
+
+#reviews form button {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#reviews form button:hover {
+    background-color: #f4a261;
+}
+
+#reviews h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+}
+
+.review-items-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.review-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 20px);
+    text-align: left;
+}
+
+.review-item:last-child {
+    margin-right: 0;
+}
+
+.review-profile {
+    display: flex;
+    align-items: center;
+}
+
+.review-profile .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.review-profile p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.review-profile strong {
+    font-weight: bold;
+    color: #2a9d8f;
+}
+
+.review-item-contaniner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+    z-index: 10; /* pastikan footer tetap di atas elemen lain */
+}
+
+
+footer .layar-dalam {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar konten footer bisa menyesuaikan pada ukuran layar kecil */
+    gap: 20px;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer p, footer ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .cpyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+form input, form select, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 5px auto;
+}
+
+form button {
+    background-color: #e76f51;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f4a261;
+}
+
+#contact {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact .layar-dalam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#contact h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+#contact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#contact ul li a:hover {
+    color: #e76f51;
+}
+
+#contact .cpyright {
+    background-color: #1e7e6e;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    nav .menu.show {
+        display: flex;
+    }
+
+    nav .menu-btn {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+    }
+
+    nav .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav .logo h1 {
+        font-size: 28px;
+    }
+
+    nav .menu li {
+        margin: 10px ;
+    }
+
+    #aboutus h3 {
+        font-size: 28px;
+    }
+
+    #aboutus .ringkasan {
+        font-size: 16px;
+    }
+
+    #aboutus .konten-isi {
+        font-size: 14px;
+    }
+
+    .product-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    header .intro h3 {
+        font-size: 30px;
+    }
+
+    .support {
+        flex-direction: column;
+    }
+
+    .dukungan .layar-dalam {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dukungan .layar-dalam div {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    #reviews h1 {
+        font-size: 28px;
+    }
+
+    #reviews form {
+        padding: 20px;
+    }
+
+    #reviews form button {
+        padding: 10px 18px;
+    }
+
+    #reviews h3 {
+        font-size: 24px;
+    }
+
+    .review-item {
+        flex: 1 1 100%;
+    }
+
+    #contact .layar-dalam {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact h5 {
+        font-size: 18px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+    #contact .cpyright {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    footer .layar-dalam {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .layar-dalam div {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .cpyright {
+        margin-top: 30px;
+    }
+}
